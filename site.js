@@ -5,7 +5,7 @@ var CFG={
   rate:25, disc:10, hold:30, minPay:50, payDay:15, cookie:60,
   store:'https://form.jotform.com/221035881222144',
   health:'https://form.jotform.com/222247655994165',
-  contact:'',          /* affiliate support email shown on the site, e.g. affiliates@yourdomain.com */
+  contact:'rootworkor@gmail.com',          /* affiliate support email shown on the site */
   applyEndpoint:'',    /* optional form service URL that accepts a POST of the application */
   products:[
     {name:'Tier 1 package',price:110,desc:'Starter Apex Herbs package. Free shipping.',url:''},
