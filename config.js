@@ -10,7 +10,7 @@ var CFG={
   products:[
     {name:'Tier 1: The Introductory Nourishment Suite',price:110,desc:'Starter program. Includes Apex Immune 2. Free shipping.',url:''},
     {name:'Tier 2: The Systemic Refinement Suite',price:189.99,desc:'Core program. Includes Apex Immune 2. Free shipping.',url:''},
-    {name:'Tier 3: The Master Nourishment Protocol',price:299.99,desc:'Full program. Includes Apex Immune 2. Free shipping.',url:''}],
+    {name:'Tier 3: The Master Nourishment Protocol',price:299.99,desc:'Full program with consultation prep and the Botanical Bio-Availability Grid. Includes Apex Immune 2. Free shipping.',url:''}],
   /* Single products: one item or a month choice. Leave price null until confirmed; the card then says "Price on the order form". */
   singles:[
     {name:'Apex Immune 2',tag:'Anchor of every program',desc:'The featured Apex Herbs product. Included in every program, also sold on its own.',url:'',options:[{label:'Single purchase',price:null}]}],
