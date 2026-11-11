@@ -6,6 +6,7 @@ var CFG={
   store:'https://pci.jotform.com/form/262628007312046',   /* NP Nourishment Program Enrollment Form */
   health:'',   /* the enrollment form collects health details itself; set a link here to show a separate questionnaire button */
   contact:'rootworkor@gmail.com',        /* affiliate support email shown on the site, e.g. affiliates@yourdomain.com */
+  applyForm:'https://form.jotform.com/263138565700154',   /* Jotform affiliate application; leave empty to use the built-in copy-and-email form */
   applyEndpoint:'',    /* optional form service URL that accepts a POST of the application */
   products:[
     {name:'Tier 1: The Introductory Nourishment Suite',price:110,desc:'Starter program. Includes Apex Immune 2. Free shipping.',url:''},
