@@ -32,7 +32,7 @@ var lg=new Image();lg.onload=function(){hasLogo=true;document.querySelectorAll('
 var tk=$('.tick');if(tk&&!tk.querySelector('.trk')){var tr=document.createElement('div');tr.className='trk';while(tk.firstChild)tr.appendChild(tk.firstChild);tk.appendChild(tr);Array.prototype.slice.call(tr.children).forEach(function(c){var k=c.cloneNode(true);k.setAttribute('aria-hidden','true');tr.appendChild(k)})}
 
 function place(f,sel,w){var el=$(sel);if(el)el[w](f)}
-function promoCode(){var i=document.getElementById('code'),v=i?(i.value||'').trim().toUpperCase():'';var m=v.match(/^[A-Z0-9]+-([A-Z0-9]+)$/);return m?PROMO.prefix+'-'+m[1]:PROMO.prefix}
+function promoCode(){var i=document.getElementById('code'),v=i?(i.value||'').trim().toUpperCase():'';var m=v.match(/^[A-Z0-9]+-([A-Z0-9]+)$/);return PROMO.prefix}
 if(page==='join'){
   var f=document.createElement('figure');f.className='offer';var i=new Image();i.alt='Nourishment Program offer';
   i.onload=function(){f.appendChild(i);var c=document.createElement('figcaption');c.textContent='Offer shown is a merchant promotion. Commission is calculated on the net price paid.';f.appendChild(c);place(f,'.hero','after')};i.src='assets/offer-2.jpg';
@@ -41,7 +41,7 @@ if(page==='join'){
 if(page==='shop'){
   if(PROMO.on){
     var s=document.createElement('section');s.className='card promo';s.id='promo';
-    s.innerHTML='<div class="pb"><span class="pillb" style="align-self:flex-start;margin:0">'+PROMO.label+'</span><h2 style="margin:0">'+PROMO.pct+'% off your package</h2><p class="small muted">Use this code on the order form instead of the standard code. Your affiliate still gets credit.</p><div class="pcode" id="pcode">'+PROMO.prefix+'</div><button class="btn ghost sm" type="button" data-copy="pcode" style="align-self:flex-start">Copy code</button><p class="legal">One use per customer. Cannot be combined with other codes. Offer may end at any time.</p></div>';
+    s.innerHTML='<div class="pb"><span class="pillb" style="align-self:flex-start;margin:0">'+PROMO.label+'</span><h2 style="margin:0">'+PROMO.pct+'% off your package</h2><p class="small muted">Enter this coupon on the order form instead of NP10. Keep your affiliate code in its box so your affiliate still gets credit.</p><div class="pcode" id="pcode">'+PROMO.prefix+'</div><button class="btn ghost sm" type="button" data-copy="pcode" style="align-self:flex-start">Copy code</button><p class="legal">One use per customer. Cannot be combined with other codes. Offer may end at any time.</p></div>';
     var im=new Image();im.alt='Nourishment Program offer';im.onload=function(){var w=document.createElement('div');w.appendChild(im);s.appendChild(w)};im.src=PROMO.img;
     place(s,'section.panel','before');
     var ci=document.getElementById('code');function up(){var p=document.getElementById('pcode');if(p)p.textContent=promoCode()}
